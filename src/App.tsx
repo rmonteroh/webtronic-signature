@@ -255,7 +255,7 @@ function App() {
                 gutterBottom
                 className={classes.centeredText}
             >
-                Very original design, pls do not steal
+                Create your personal signature
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={6}>
