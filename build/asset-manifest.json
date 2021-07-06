@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d6c6c69.chunk.css",
-    "main.js": "/static/js/main.c0b31ffb.chunk.js",
-    "main.js.map": "/static/js/main.c0b31ffb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6fb3d5c2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6fb3d5c2.js.map",
-    "static/js/2.1e550b8b.chunk.js": "/static/js/2.1e550b8b.chunk.js",
-    "static/js/2.1e550b8b.chunk.js.map": "/static/js/2.1e550b8b.chunk.js.map",
-    "static/js/3.4c42e4a6.chunk.js": "/static/js/3.4c42e4a6.chunk.js",
-    "static/js/3.4c42e4a6.chunk.js.map": "/static/js/3.4c42e4a6.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.2d6c6c69.chunk.css.map": "/static/css/main.2d6c6c69.chunk.css.map",
-    "static/js/2.1e550b8b.chunk.js.LICENSE.txt": "/static/js/2.1e550b8b.chunk.js.LICENSE.txt",
-    "static/media/wlogo.90f2a496.png": "/static/media/wlogo.90f2a496.png"
+    "main.css": "/webtronic-signature/static/css/main.2d6c6c69.chunk.css",
+    "main.js": "/webtronic-signature/static/js/main.c0b31ffb.chunk.js",
+    "main.js.map": "/webtronic-signature/static/js/main.c0b31ffb.chunk.js.map",
+    "runtime-main.js": "/webtronic-signature/static/js/runtime-main.a0246583.js",
+    "runtime-main.js.map": "/webtronic-signature/static/js/runtime-main.a0246583.js.map",
+    "static/js/2.1e550b8b.chunk.js": "/webtronic-signature/static/js/2.1e550b8b.chunk.js",
+    "static/js/2.1e550b8b.chunk.js.map": "/webtronic-signature/static/js/2.1e550b8b.chunk.js.map",
+    "static/js/3.4c42e4a6.chunk.js": "/webtronic-signature/static/js/3.4c42e4a6.chunk.js",
+    "static/js/3.4c42e4a6.chunk.js.map": "/webtronic-signature/static/js/3.4c42e4a6.chunk.js.map",
+    "index.html": "/webtronic-signature/index.html",
+    "static/css/main.2d6c6c69.chunk.css.map": "/webtronic-signature/static/css/main.2d6c6c69.chunk.css.map",
+    "static/js/2.1e550b8b.chunk.js.LICENSE.txt": "/webtronic-signature/static/js/2.1e550b8b.chunk.js.LICENSE.txt",
+    "static/media/wlogo.90f2a496.png": "/webtronic-signature/static/media/wlogo.90f2a496.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6fb3d5c2.js",
+    "static/js/runtime-main.a0246583.js",
     "static/js/2.1e550b8b.chunk.js",
     "static/css/main.2d6c6c69.chunk.css",
     "static/js/main.c0b31ffb.chunk.js"
