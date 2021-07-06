@@ -10,7 +10,7 @@
     }
   ],
   "description": "A simple email signature generator app (SPA) made with React",
-  "homepage": "",
+  "homepage": "http://rmonteroh.github.io/webtronic-signature",
   "keywords": [
     "spa",
     "react",
