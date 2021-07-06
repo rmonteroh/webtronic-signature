@@ -297,7 +297,7 @@ function App() {
                             <TextField
                                 fullWidth={true}
                                 required
-                                label="site"
+                                label="Company site or porfolio online"
                                 value={state.site}
                                 name={"site"}
                                 onChange={handleChange}
