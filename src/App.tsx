@@ -335,7 +335,7 @@ function App() {
                                         color="primary"
                                     />
                                 }
-                                label={state.withPhoto ? "Photo" : "No photo"}
+                                label={state.withPhoto ? "Change photo" : "No photo"}
                             />
                             {state.withPhoto && (
                                 <TextField
