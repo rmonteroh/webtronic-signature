@@ -49,8 +49,10 @@ export interface PhotoSignatureProps {
     site: string;
     phone: string;
     photo: string;
-    fbUrl: string;
-    inUrl: string;
+    facebookUrl: string;
+    linkedinUrl: string;
+    instagramUrl: string;
+    twitterUrl: string;
 }
 
 interface State extends PhotoSignatureProps {
@@ -65,8 +67,10 @@ const initialState: State = {
     email: "",
     site: "",
     phone: "",
-    fbUrl: "",
-    inUrl: "",
+    facebookUrl: "",
+    linkedinUrl: "",
+    instagramUrl: "",
+    twitterUrl: "",
     photo: "",
     withPhoto: false,
     copied: false,
@@ -111,8 +115,10 @@ function App() {
                             site={state.site}
                             phone={state.phone}
                             photo={state.photo}
-                            fbUrl={state.fbUrl}
-                            inUrl={state.inUrl}
+                            facebookUrl={state.facebookUrl}
+                            linkedinUrl={state.linkedinUrl}
+                            instagramUrl={state.instagramUrl}
+                            twitterUrl={state.twitterUrl}
                         />
                         <br/>
                         <Button
@@ -143,7 +149,7 @@ function App() {
                 });
             }
         } else {
-            if (state.fullName && state.phone && state.position && state.address) {
+            if (state.fullName && state.phone && state.position) {
                 return (
                     <React.Fragment>
                         <Signature
@@ -154,8 +160,10 @@ function App() {
                             site={state.site}
                             phone={state.phone}
                             photo={"no-photo"}
-                            fbUrl={state.fbUrl}
-                            inUrl={state.inUrl}
+                            facebookUrl={state.facebookUrl}
+                            linkedinUrl={state.linkedinUrl}
+                            instagramUrl={state.instagramUrl}
+                            twitterUrl={state.twitterUrl}
                         />
                         <br/>
                         <Button
@@ -200,6 +208,11 @@ function App() {
         var element = document.createElement('a');
         element.setAttribute('href', 'data:text/html;charset=utf-8,' + `${htmlElement?.innerHTML}`);
         element.setAttribute('download', 'signature.html');
+
+        const meta = document.createElement('meta');
+        meta.httpEquiv = "Content-Type";
+        meta.content = "text/html; charset=UTF-8";
+        document.getElementsByTagName('head')[0].appendChild(meta);
       
         element.style.display = 'none';
         document.body.appendChild(element);
@@ -280,7 +293,6 @@ function App() {
                             />
                             <TextField
                                 fullWidth={true}
-                                required
                                 label="address"
                                 value={state.address}
                                 name={"address"}
@@ -296,7 +308,6 @@ function App() {
                             />
                             <TextField
                                 fullWidth={true}
-                                required
                                 label="Company site or porfolio online"
                                 value={state.site}
                                 name={"site"}
@@ -312,21 +323,33 @@ function App() {
                             />
                             <TextField
                                 fullWidth={true}
-                                required
                                 label="Facebook profile"
-                                value={state.fbUrl}
-                                name={"fbUrl"}
+                                value={state.facebookUrl}
+                                name={"facebookUrl"}
                                 onChange={handleChange}
                             />
                             <TextField
                                 fullWidth={true}
-                                required
                                 label="LinkedIn profile"
-                                value={state.inUrl}
-                                name={"inUrl"}
+                                value={state.linkedinUrl}
+                                name={"linkedinUrl"}
                                 onChange={handleChange}
                             />
-                            <FormControlLabel
+                            <TextField
+                                fullWidth={true}
+                                label="Instagram profile"
+                                value={state.instagramUrl}
+                                name={"instagramUrl"}
+                                onChange={handleChange}
+                            />
+                            <TextField
+                                fullWidth={true}
+                                label="Twitter profile"
+                                value={state.twitterUrl}
+                                name={"twitterUrl"}
+                                onChange={handleChange}
+                            />
+                           {/*  <FormControlLabel
                                 control={
                                     <Switch
                                         checked={state.withPhoto}
@@ -336,7 +359,7 @@ function App() {
                                     />
                                 }
                                 label={state.withPhoto ? "Change photo" : "No photo"}
-                            />
+                            /> */}
                             {state.withPhoto && (
                                 <TextField
                                     error={state.photo.length > photoUrlMaxLength}
