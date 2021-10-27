@@ -75,7 +75,7 @@ const Signature = (props: PhotoSignatureProps) => {
                         style={{
                           fontSize: 14,
                           textDecoration: "none",
-                          color: "#ff7d81",
+                          color: "#000000bd",
                         }}
                       >
                         {" "}
@@ -100,7 +100,7 @@ const Signature = (props: PhotoSignatureProps) => {
                       style={{
                         fontSize: 14,
                         textDecoration: "none",
-                        color: "#ff7d81",
+                        color: "#000000bd",
                       }}
                     >
                       {" "}
@@ -120,16 +120,18 @@ const Signature = (props: PhotoSignatureProps) => {
                       >
                         w:
                       </span>
-                      <span
+                      <a
+                        href={props.site}
+                        target="_blank"
                         style={{
                           fontSize: 14,
                           textDecoration: "none",
-                          color: "#ff7d81",
+                          color: "#000000bd",
                         }}
                       >
                         {" "}
                         {props.site}
-                      </span>
+                      </a>
                     </td>
                   </tr>
                 )}
@@ -149,7 +151,7 @@ const Signature = (props: PhotoSignatureProps) => {
                       style={{
                         fontSize: 14,
                         textDecoration: "none",
-                        color: "#ff7d81",
+                        color: "#000000bd",
                       }}
                     >
                       {" "}
