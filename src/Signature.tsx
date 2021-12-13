@@ -24,16 +24,82 @@ const Signature = (props: PhotoSignatureProps) => {
           maxWidth: "100%",
           whiteSpace: "nowrap",
           background: "#FFFFFF",
+          width: "500px"
         }}
       >
         <tbody>
           <tr>
             <td>
-              <img
-                style={{ width: 150 }}
-                src={props.photo === "no-photo" ? imagesUrl.logo : props.photo}
-                alt={""}
-              />
+              <table>
+                <tr style={{textAlign: 'center'}}>
+                  <td>
+                    <img
+                      style={{ width: 70 }}
+                      src={props.photo === "no-photo" ? imagesUrl.logo : props.photo}
+                      alt={""}
+                    />
+                  </td>
+                </tr>
+                <tr  style={{textAlign: 'center'}}>
+                  <td>
+                    <span style={{color: "#ff9474"}}>Webtronic Labs</span>
+                  </td>
+                </tr>
+                <tr  style={{textAlign: 'center'}}>
+                  <td>
+                    <div style={{ marginTop: 10 }}>
+                      {props.facebookUrl && props.facebookUrl !== "" && (
+                        <a style={{ marginRight: 5, height: 20}} href={props.facebookUrl}>
+                          <img
+                            height="22"
+                            src={imagesUrl.facebook}
+                            alt="Facebook"
+                          />
+                        </a>
+                      )}
+                      {props.linkedinUrl && props.linkedinUrl !== "" && (
+                        <a style={{ marginRight: 5, height: 20}} href={props.linkedinUrl}>
+                          <img
+                            height="22"
+                            src={imagesUrl.linkedIn}
+                            alt="Linkedin"
+                          />
+                        </a>
+                      )}
+                      {props.instagramUrl && props.instagramUrl !== "" && (
+                        <a
+                          style={{ marginRight: 5, height: 20}}
+                          href={props.instagramUrl}
+                        >
+                          <img
+                            height="22"
+                            src={imagesUrl.instagram}
+                            alt="Instagram"
+                          />
+                        </a>
+                      )}
+                      {props.twitterUrl && props.twitterUrl !== "" && (
+                        <a style={{ marginRight: 5, height: 20}} href={props.twitterUrl}>
+                          <img
+                            height="22"
+                            src={imagesUrl.twitter}
+                            alt="Twitter"
+                          />
+                        </a>
+                      )}
+                      {props.twitterUrl && props.youtubeUrl !== "" && (
+                        <a style={{ marginRight: 5, height: 20}} href={props.twitterUrl}>
+                          <img
+                            height="22"
+                            src={imagesUrl.youtube}
+                            alt="Twitter"
+                          />
+                        </a>
+                      )}
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </td>
             <td>
               <div
@@ -41,8 +107,7 @@ const Signature = (props: PhotoSignatureProps) => {
                   width: 0,
                   height: "100%",
                   borderRight: "1px solid #fcddde",
-                  marginRight: 9,
-                  marginLeft: 10,
+                  marginRight: 8,
                 }}
               />
             </td>
@@ -167,7 +232,7 @@ const Signature = (props: PhotoSignatureProps) => {
                     </td>
                   </tr>
                 )}
-                <tr>
+                {/* <tr>
                   <td colSpan={3}>
                     <div style={{ marginTop: 10 }}>
                       {props.facebookUrl && props.facebookUrl !== "" && (
@@ -220,7 +285,7 @@ const Signature = (props: PhotoSignatureProps) => {
                       )}
                     </div>
                   </td>
-                </tr>
+                </tr> */}
               </table>
             </td>
           </tr>
