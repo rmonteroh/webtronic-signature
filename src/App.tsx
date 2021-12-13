@@ -53,6 +53,7 @@ export interface PhotoSignatureProps {
     linkedinUrl: string;
     instagramUrl: string;
     twitterUrl: string;
+    youtubeUrl: string;
 }
 
 interface State extends PhotoSignatureProps {
@@ -63,14 +64,15 @@ interface State extends PhotoSignatureProps {
 const initialState: State = {
     fullName: "",
     position: "",
-    address: "",
     email: "",
-    site: "",
-    phone: "",
-    facebookUrl: "",
-    linkedinUrl: "",
-    instagramUrl: "",
-    twitterUrl: "",
+    address: "2002 North Tampa Street, Tampa, FL, 33602",
+    site: "https://webtroniclabs.com",
+    phone: "+1 (813) 420-4936",
+    facebookUrl: "https://www.facebook.com/webtroniclabs/",
+    linkedinUrl: "https://www.linkedin.com/company/webtroniclabs/",
+    instagramUrl: "https://www.instagram.com/webtroniclabs/",
+    twitterUrl: "https://twitter.com/WebtronicLabs",
+    youtubeUrl: "https://youtube.com/channel/UCB-vvrF7MoKcydVB0GxJ7gg",
     photo: "",
     withPhoto: false,
     copied: false,
@@ -119,6 +121,7 @@ function App() {
                             linkedinUrl={state.linkedinUrl}
                             instagramUrl={state.instagramUrl}
                             twitterUrl={state.twitterUrl}
+                            youtubeUrl={state.youtubeUrl}
                         />
                         <br/>
                         <Button
@@ -164,6 +167,7 @@ function App() {
                             linkedinUrl={state.linkedinUrl}
                             instagramUrl={state.instagramUrl}
                             twitterUrl={state.twitterUrl}
+                            youtubeUrl={state.youtubeUrl}
                         />
                         <br/>
                         <Button
@@ -270,8 +274,8 @@ function App() {
             >
                 Create your personal signature
             </Typography>
-            <Grid container spacing={3}>
-                <Grid item xs={6}>
+            <Grid container sm={12} spacing={3}>
+                <Grid item sm={12} md={6} lg={6} >
                     <Paper className={classes.paper}>
                         <form className={classes.root} noValidate autoComplete="off">
                             <TextField
@@ -293,13 +297,6 @@ function App() {
                             />
                             <TextField
                                 fullWidth={true}
-                                label="address"
-                                value={state.address}
-                                name={"address"}
-                                onChange={handleChange}
-                            />
-                            <TextField
-                                fullWidth={true}
                                 required
                                 label="email"
                                 value={state.email}
@@ -307,6 +304,7 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
                                 fullWidth={true}
                                 label="Company site or porfolio online"
                                 value={state.site}
@@ -314,6 +312,15 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
+                                fullWidth={true}
+                                label="address"
+                                value={state.address}
+                                name={"address"}
+                                onChange={handleChange}
+                            />
+                            <TextField
+                                disabled
                                 fullWidth={true}
                                 required
                                 label="Telephone"
@@ -322,6 +329,7 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
                                 fullWidth={true}
                                 label="Facebook profile"
                                 value={state.facebookUrl}
@@ -329,6 +337,7 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
                                 fullWidth={true}
                                 label="LinkedIn profile"
                                 value={state.linkedinUrl}
@@ -336,6 +345,7 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
                                 fullWidth={true}
                                 label="Instagram profile"
                                 value={state.instagramUrl}
@@ -343,6 +353,7 @@ function App() {
                                 onChange={handleChange}
                             />
                             <TextField
+                                disabled
                                 fullWidth={true}
                                 label="Twitter profile"
                                 value={state.twitterUrl}
@@ -386,7 +397,7 @@ function App() {
                         </form>
                     </Paper>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item sm={12} md={6}>
                     <Paper className={classes.paper}>{enoughData()}</Paper>
                 </Grid>
             </Grid>
