@@ -65,33 +65,6 @@ const Signature = (props: PhotoSignatureProps) => {
                     </span>
                   </td>
                 </tr>
-                {props.address && props.address !== "" && (
-                  <tr>
-                    <td>
-                      <span
-                        style={{
-                          fontWeight: 900,
-                          color: "#ff7d81",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        a:
-                      </span>
-                      <a
-                        href={`http://maps.google.com/maps?q=${encodeURIComponent(props.address)}`}
-                        target="_blank"
-                        style={{
-                          fontSize: 14,
-                          textDecoration: "none",
-                          color: "#000000bd",
-                        }}
-                      >
-                        {" "}
-                        {props.address}
-                      </a>
-                    </td>
-                  </tr>
-                )}
                 <tr>
                   <td>
                     <span
@@ -167,6 +140,33 @@ const Signature = (props: PhotoSignatureProps) => {
                     </a>
                   </td>
                 </tr>
+                {props.address && props.address !== "" && (
+                  <tr>
+                    <td>
+                      <span
+                        style={{
+                          fontWeight: 900,
+                          color: "#ff7d81",
+                          lineHeight: "20px",
+                        }}
+                      >
+                        a:
+                      </span>
+                      <a
+                        href={`http://maps.google.com/maps?q=${encodeURIComponent(props.address)}`}
+                        target="_blank"
+                        style={{
+                          fontSize: 14,
+                          textDecoration: "none",
+                          color: "#000000bd",
+                        }}
+                      >
+                        {" "}
+                        {props.address}
+                      </a>
+                    </td>
+                  </tr>
+                )}
                 <tr>
                   <td colSpan={3}>
                     <div style={{ marginTop: 10 }}>
