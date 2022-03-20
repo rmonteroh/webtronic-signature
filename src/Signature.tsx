@@ -12,7 +12,7 @@ const Signature = (props: PhotoSignatureProps) => {
     twitter: `${baseUrl}/circle-twitter-icon.png`,
     youtube: `${baseUrl}/circle-youtube-icon.png`,
   };
-
+ 
   return (
     <div id="signatureId">
       <table
