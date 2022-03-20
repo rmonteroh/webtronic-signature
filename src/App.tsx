@@ -263,7 +263,7 @@ function App() {
 
     return (
         <Container>
-            <img className={classes.centeredImage} src="https://storage.googleapis.com/web-landing-cdn/icons/webtronic-logo.png" alt={"logo"}/>
+            <img className={classes.centeredImage} src="https://storage.googleapis.com/archive.webtroniclabs.com/assets/webtronic-signature/logo.png" alt={"logo"}/>
             <Typography variant="h2" gutterBottom className={classes.centeredText}>
                 Signature generator
             </Typography>
