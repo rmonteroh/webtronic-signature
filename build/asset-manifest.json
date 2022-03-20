@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/webtronic-signature/static/css/main.2d6c6c69.chunk.css",
-    "main.js": "/webtronic-signature/static/js/main.e66b6502.chunk.js",
-    "main.js.map": "/webtronic-signature/static/js/main.e66b6502.chunk.js.map",
+    "main.js": "/webtronic-signature/static/js/main.353d5741.chunk.js",
+    "main.js.map": "/webtronic-signature/static/js/main.353d5741.chunk.js.map",
     "runtime-main.js": "/webtronic-signature/static/js/runtime-main.85515e94.js",
     "runtime-main.js.map": "/webtronic-signature/static/js/runtime-main.85515e94.js.map",
     "static/js/2.a32b15cc.chunk.js": "/webtronic-signature/static/js/2.a32b15cc.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.85515e94.js",
     "static/js/2.a32b15cc.chunk.js",
     "static/css/main.2d6c6c69.chunk.css",
-    "static/js/main.e66b6502.chunk.js"
+    "static/js/main.353d5741.chunk.js"
   ]
 }
