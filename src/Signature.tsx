@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { PhotoSignatureProps } from "./App";
-import { ISignatureImagesUrl } from './interfaces/signature-image-url.interface';
+import { ISignatureImagesUrl } from "./interfaces/signature-image-url.interface";
 
 const Signature = (props: PhotoSignatureProps) => {
-  const baseUrl = 'https://storage.googleapis.com/proflyt-template-assets/Social%20media%20icons';
+  const baseUrl =
+    "https://storage.googleapis.com/proflyt-template-assets/Social%20media%20icons";
 
   const imagesUrl: ISignatureImagesUrl = {
-    logo: 'https://storage.googleapis.com/archive.webtroniclabs.com/assets/webtronic-signature/logo.png',
+    logo: "https://storage.googleapis.com/archive.webtroniclabs.com/assets/webtronic-signature/logo.png",
     facebook: `${baseUrl}/circle-facebook1-icon.png`,
     linkedIn: `${baseUrl}/circle-linkedin-icon.png`,
     instagram: `${baseUrl}/circle-instagram-icon.png`,
@@ -15,7 +16,7 @@ const Signature = (props: PhotoSignatureProps) => {
   };
 
   return (
-    <div id="signatureId">
+    <div id='signatureId'>
       <table
         cellPadding={0}
         cellSpacing={0}
@@ -25,7 +26,7 @@ const Signature = (props: PhotoSignatureProps) => {
           maxWidth: "100%",
           whiteSpace: "nowrap",
           background: "#FFFFFF",
-          width: "500px"
+          width: "500px",
         }}
       >
         <tbody>
@@ -33,68 +34,84 @@ const Signature = (props: PhotoSignatureProps) => {
             <td>
               <table>
                 <tbody>
-                  <tr style={{textAlign: 'center'}}>
+                  <tr style={{ textAlign: "center" }}>
                     <td>
                       <img
                         style={{ width: 70 }}
-                        src={props.photo === "no-photo" ? imagesUrl.logo : props.photo}
+                        src={
+                          props.photo === "no-photo"
+                            ? imagesUrl.logo
+                            : props.photo
+                        }
                         alt={""}
                       />
                     </td>
                   </tr>
-                  <tr  style={{textAlign: 'center'}}>
+                  <tr style={{ textAlign: "center" }}>
                     <td>
-                      <span style={{color: "#ff9474"}}>Webtronic Labs</span>
+                      <span style={{ color: "#ff9474" }}>Webtronic Labs</span>
                     </td>
                   </tr>
-                  <tr  style={{textAlign: 'center'}}>
+                  <tr style={{ textAlign: "center" }}>
                     <td>
                       <div style={{ marginTop: 10 }}>
                         {props.facebookUrl && props.facebookUrl !== "" && (
-                          <a style={{ marginRight: 5, height: 20}} href={props.facebookUrl}>
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.facebookUrl}
+                          >
                             <img
-                              height="22"
+                              height='22'
                               src={imagesUrl.facebook}
-                              alt="Facebook"
+                              alt='Facebook'
                             />
                           </a>
                         )}
                         {props.linkedinUrl && props.linkedinUrl !== "" && (
-                          <a style={{ marginRight: 5, height: 20}} href={props.linkedinUrl}>
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.linkedinUrl}
+                          >
                             <img
-                              height="22"
+                              height='22'
                               src={imagesUrl.linkedIn}
-                              alt="Linkedin"
+                              alt='Linkedin'
                             />
                           </a>
                         )}
                         {props.instagramUrl && props.instagramUrl !== "" && (
                           <a
-                            style={{ marginRight: 5, height: 20}}
+                            style={{ marginRight: 5, height: 20 }}
                             href={props.instagramUrl}
                           >
                             <img
-                              height="22"
+                              height='22'
                               src={imagesUrl.instagram}
-                              alt="Instagram"
+                              alt='Instagram'
                             />
                           </a>
                         )}
                         {props.twitterUrl && props.twitterUrl !== "" && (
-                          <a style={{ marginRight: 5, height: 20}} href={props.twitterUrl}>
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.twitterUrl}
+                          >
                             <img
-                              height="22"
+                              height='22'
                               src={imagesUrl.twitter}
-                              alt="Twitter"
+                              alt='Twitter'
                             />
                           </a>
                         )}
                         {props.twitterUrl && props.youtubeUrl !== "" && (
-                          <a style={{ marginRight: 5, height: 20}} href={props.twitterUrl}>
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.twitterUrl}
+                          >
                             <img
-                              height="22"
+                              height='22'
                               src={imagesUrl.youtube}
-                              alt="Twitter"
+                              alt='Twitter'
                             />
                           </a>
                         )}
@@ -172,7 +189,7 @@ const Signature = (props: PhotoSignatureProps) => {
                         </span>
                         <a
                           href={props.site}
-                          target="_blank"
+                          target='_blank'
                           style={{
                             fontSize: 14,
                             textDecoration: "none",
@@ -222,8 +239,10 @@ const Signature = (props: PhotoSignatureProps) => {
                           a:
                         </span>
                         <a
-                          href={`http://maps.google.com/maps?q=${encodeURIComponent(props.address)}`}
-                          target="_blank"
+                          href={`http://maps.google.com/maps?q=${encodeURIComponent(
+                            props.address
+                          )}`}
+                          target='_blank'
                           style={{
                             fontSize: 14,
                             textDecoration: "none",
