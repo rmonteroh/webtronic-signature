@@ -2,7 +2,7 @@ import React from "react";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import {Button, Container, FormControlLabel, Switch, TextField, Typography,} from "@material-ui/core";
+import {Button, Container, TextField, Typography,} from "@material-ui/core";
 import Signature from "./Signature";
 import {CheckOutlined, FileCopyOutlined, GetApp} from "@material-ui/icons";
 import CircularProgressWithLabel from "./CircularProgressWithLabel";

@@ -1,20 +1,13 @@
 {
   "files": {
-    "main.css": "/webtronic-signature/static/css/main.2d6c6c69.chunk.css",
-    "main.js": "/webtronic-signature/static/js/main.353d5741.chunk.js",
-    "main.js.map": "/webtronic-signature/static/js/main.353d5741.chunk.js.map",
-    "runtime-main.js": "/webtronic-signature/static/js/runtime-main.85515e94.js",
-    "runtime-main.js.map": "/webtronic-signature/static/js/runtime-main.85515e94.js.map",
-    "static/js/2.a32b15cc.chunk.js": "/webtronic-signature/static/js/2.a32b15cc.chunk.js",
-    "static/js/2.a32b15cc.chunk.js.map": "/webtronic-signature/static/js/2.a32b15cc.chunk.js.map",
+    "main.css": "/webtronic-signature/static/css/main.7c0e7c47.css",
+    "main.js": "/webtronic-signature/static/js/main.4dfbbfce.js",
     "index.html": "/webtronic-signature/index.html",
-    "static/css/main.2d6c6c69.chunk.css.map": "/webtronic-signature/static/css/main.2d6c6c69.chunk.css.map",
-    "static/js/2.a32b15cc.chunk.js.LICENSE.txt": "/webtronic-signature/static/js/2.a32b15cc.chunk.js.LICENSE.txt"
+    "main.7c0e7c47.css.map": "/webtronic-signature/static/css/main.7c0e7c47.css.map",
+    "main.4dfbbfce.js.map": "/webtronic-signature/static/js/main.4dfbbfce.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.85515e94.js",
-    "static/js/2.a32b15cc.chunk.js",
-    "static/css/main.2d6c6c69.chunk.css",
-    "static/js/main.353d5741.chunk.js"
+    "static/css/main.7c0e7c47.css",
+    "static/js/main.4dfbbfce.js"
   ]
 }
