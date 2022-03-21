@@ -13,6 +13,7 @@ const Signature = (props: PhotoSignatureProps) => {
     instagram: `${baseUrl}/circle-instagram-icon.png`,
     twitter: `${baseUrl}/circle-twitter-icon.png`,
     youtube: `${baseUrl}/circle-youtube-icon.png`,
+    github: `https://img.icons8.com/ios-filled/344/github.png`,
   };
 
   return (
@@ -26,7 +27,7 @@ const Signature = (props: PhotoSignatureProps) => {
           maxWidth: "100%",
           whiteSpace: "nowrap",
           background: "#FFFFFF",
-          width: "500px",
+          width: "430px",
         }}
       >
         <tbody>
@@ -55,18 +56,6 @@ const Signature = (props: PhotoSignatureProps) => {
                   <tr style={{ textAlign: "center" }}>
                     <td>
                       <div style={{ marginTop: 10 }}>
-                        {props.facebookUrl && props.facebookUrl !== "" && (
-                          <a
-                            style={{ marginRight: 5, height: 20 }}
-                            href={props.facebookUrl}
-                          >
-                            <img
-                              height='22'
-                              src={imagesUrl.facebook}
-                              alt='Facebook'
-                            />
-                          </a>
-                        )}
                         {props.linkedinUrl && props.linkedinUrl !== "" && (
                           <a
                             style={{ marginRight: 5, height: 20 }}
@@ -103,14 +92,44 @@ const Signature = (props: PhotoSignatureProps) => {
                             />
                           </a>
                         )}
-                        {props.twitterUrl && props.youtubeUrl !== "" && (
+                      </div>
+                    </td>
+                  </tr>
+                  <tr style={{ textAlign: "center" }}>
+                    <td>
+                      <div>
+                        {props.facebookUrl && props.facebookUrl !== "" && (
                           <a
                             style={{ marginRight: 5, height: 20 }}
-                            href={props.twitterUrl}
+                            href={props.facebookUrl}
+                          >
+                            <img
+                              height='22'
+                              src={imagesUrl.facebook}
+                              alt='Facebook'
+                            />
+                          </a>
+                        )}
+                        {props.youtubeUrl && props.youtubeUrl !== "" && (
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.youtubeUrl}
                           >
                             <img
                               height='22'
                               src={imagesUrl.youtube}
+                              alt='Twitter'
+                            />
+                          </a>
+                        )}
+                        {props.githubUrl && props.githubUrl !== "" && (
+                          <a
+                            style={{ marginRight: 5, height: 20 }}
+                            href={props.githubUrl}
+                          >
+                            <img
+                              height='22'
+                              src={imagesUrl.github}
                               alt='Twitter'
                             />
                           </a>

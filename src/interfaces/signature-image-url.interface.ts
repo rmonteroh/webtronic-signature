@@ -5,4 +5,5 @@ export interface ISignatureImagesUrl {
   instagram: string,
   twitter: string,
   youtube: string,
+  github: string,
 }

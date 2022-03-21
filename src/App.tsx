@@ -54,6 +54,7 @@ export interface PhotoSignatureProps {
     instagramUrl: string;
     twitterUrl: string;
     youtubeUrl: string;
+    githubUrl: string;
 }
 
 interface State extends PhotoSignatureProps {
@@ -73,6 +74,7 @@ const initialState: State = {
     instagramUrl: "https://www.instagram.com/webtroniclabs/",
     twitterUrl: "https://twitter.com/WebtronicLabs",
     youtubeUrl: "https://youtube.com/channel/UCB-vvrF7MoKcydVB0GxJ7gg",
+    githubUrl: "https://github.com/Webtronic-Labs",
     photo: "",
     withPhoto: false,
     copied: false,
@@ -122,6 +124,7 @@ function App() {
                             instagramUrl={state.instagramUrl}
                             twitterUrl={state.twitterUrl}
                             youtubeUrl={state.youtubeUrl}
+                            githubUrl={state.githubUrl}
                         />
                         <br/>
                         <Button
@@ -168,6 +171,7 @@ function App() {
                             instagramUrl={state.instagramUrl}
                             twitterUrl={state.twitterUrl}
                             youtubeUrl={state.youtubeUrl}
+                            githubUrl={state.githubUrl}
                         />
                         <br/>
                         <Button
