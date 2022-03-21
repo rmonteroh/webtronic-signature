@@ -65,7 +65,7 @@ const initialState: State = {
     fullName: "",
     position: "",
     email: "",
-    address: "2002 North Tampa Street, Tampa, FL, 33602",
+    address: "12350 SW 184th St, Miami, FL, 33177",
     site: "https://webtroniclabs.com",
     phone: "+1 (813) 420-4936",
     facebookUrl: "https://www.facebook.com/webtroniclabs/",
